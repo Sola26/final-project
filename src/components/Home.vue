@@ -79,7 +79,7 @@ body {
 
 h1 {
   font-size: 25px;
-  margin-top: 16%;
+  margin-top: 30%;
 
   font-family: "Courier";
 }

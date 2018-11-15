@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="art">
     <nav>
       <router-link to="/">
         <div class="logo"><img src="/static/logo3.png" alt="logo" /></div>
@@ -42,11 +42,12 @@ export default {
 </script>
 
 <style>
-/* a.router-link-exact-active {
+a.router-link-exact-active {
   font-weight: bold;
   transition: all 0.5s ease-out;
   font-size: 20px;
-} */
+  color: pink;
+}
 .logo {
   position: absolute;
   top: 10%;
@@ -60,7 +61,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
+  font-size: 17px;
   position: absolute;
   top: 10%;
   left: 75%;
@@ -68,5 +69,18 @@ img {
 .li {
   color: #2c3e50;
   margin: 20px;
+}
+.art {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 1px;
+  border: none;
+  margin-top: 70px;
+  background: none;
+  color: #2c3e50;
+  font-size: 12px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 50px 20px;
 }
 </style>

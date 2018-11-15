@@ -1,18 +1,21 @@
 <template>
-  <div class="container">
-    <img src="/assets/logo3" alt="" />
-    <h1>What I can do.</h1>
+  <div class="background">
+    <p class="title">What I do.</p>
+    <div class="text1">
+      <div class="art"><h2>Design what you want.</h2></div>
+      <p>
+        I like to keep it simple. My goals are to focus on typography, content
+        and conveying the message that you want to send.
+      </p>
+    </div>
 
-    <h2>Design what you want.</h2>
-    <h3>
-      I like to keep it simple. My goals are to focus on typography, content and
-      conveying the message that you want to send.
-    </h3>
-    <h2>Develop what you need.</h2>
-    <h3>
-      I'm a developer, so I know how to create your website to run across
-      devices using the latest technologies available.
-    </h3>
+    <div class="text2">
+      <div class="art"><h2>Develop what you need.</h2></div>
+      <p>
+        I'm a developer, so I know how to create your website to run across
+        devices using the latest technologies available.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -26,8 +29,24 @@ export default {
 </script>
 
 <style scoped>
-.about {
-  color: rgb(255, 255, 255);
+.art {
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  border: none;
+  background: none;
+  color: #2c3e50;
+  font-size: 12px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 50px 20px;
+}
+.title {
+  font-family: Courier;
+  font-size: 100px;
+  margin-top: 2em;
+  color: pink;
 }
 img {
   border-style: none;
@@ -36,5 +55,27 @@ img {
   left: 50%;
   height: 100px;
   width: 100px;
+}
+.text1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  position: absolute;
+  top: 65%;
+  left: 34%;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  position: absolute;
+  top: 120%;
+  left: 34%;
+}
+.background {
+  background-color: white;
+  height: 1000px;
 }
 </style>
