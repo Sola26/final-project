@@ -5,45 +5,53 @@
       <h2>What I've been up to.</h2>
       <h3>Here's a selection of some recent work.</h3>
     </div>
-    <div class="container1">
-      <h2 class="art1">App's title</h2>
-      <div class="textbox1">
-        <p>
-          app Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
-        </p>
+    <div class="bigcontainer">
+      <div class="container1">
+        <h2 class="art1">Neartastic</h2>
+        <div class="textbox1">
+          <img class="img1" src="/static/app.png" />
+          <p>
+            app Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
       </div>
-      <img class="img1" src="/static/app.png" />
-    </div>
-    <h2 class="art2">Berlin's title</h2>
-    <div class="textbox2">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
-    <video class="responsive-video" controls>
-      <source src="/static/Das ist Berlin+.mp4" type="video/mp4" />
-    </video>
-    <div class="textbox3">
-      <h2 class="art3">Hood magazine</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
-    <div class="flex">
-      <img class="img3" src="/static/hoodcover.jpg" />
-      <img class="img3" src="/static/hood1.jpg" />
-      <img class="img3" src="/static/hood2.jpg" />
-      <img class="img3" src="/static/hood3.jpg" />
-      <img class="img3" src="/static/hood5.jpg" />
-      <img class="img3" src="/static/hood6.jpg" />
+
+      <div class="container3">
+        <h2 class="art3">Hood magazine</h2>
+
+        <div class="flex">
+          <img class="img3" src="/static/hoodcover.jpg" />
+          <img class="img3" src="/static/hood1.jpg" />
+          <img class="img3" src="/static/hood2.jpg" />
+          <img class="img3" src="/static/hood3.jpg" />
+          <img class="img3" src="/static/hood5.jpg" />
+          <img class="img3" src="/static/hood6.jpg" />
+        </div>
+        <div class="textbox3">
+          <p>
+            HOOD is a magazine geared toward collecting and commemorating all
+            things ordinarily wonderful. The most random discoveries: bazaar
+            drawings, cheeky messages, you name it. Schoeneberg, a street in
+            Tempelhof, is well known for its plethora of art galleries and
+            institutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="container2">
+        <h2 class="art2">Das is Berlin</h2>
+        <video class="responsive-video" controls>
+          <source src="/static/Das ist Berlin+.mp4" type="video/mp4" />
+        </video>
+        <div class="textbox2">
+          <p>
+            Here is a music video that I love made by Berliner Morgenpost. I
+            added some effects with Adobe After Effect.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -57,7 +65,7 @@ export default {
 </script>
 <style scoped>
 .background {
-  height: 3000px;
+  height: 5400px;
 }
 .p {
   font-size: 1.5em;
@@ -98,75 +106,76 @@ h3 {
 .container1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .textbox1 {
   display: flex;
   flex-direction: column;
-
   width: 400px;
-  /* position: absolute;
-  top: 200%;
-  left: 34%; */
 }
 
 .textbox2 {
   display: flex;
   flex-direction: column;
-
-  width: 400px;
-  margin-top: 60%;
+  width: 630px;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: left;
 }
 .img1 {
   height: 600px;
   width: 900px;
-  /* margin-top: 1%; */
   object-fit: cover;
+  align-self: center;
 }
 .responsive-video {
   height: 400px;
   width: 600px;
-  margin-top: 200px;
+  align-self: center;
 }
-.img3 {
-  height: 600px;
-  width: 900px;
-  margin-top: 50%;
-  object-fit: cover;
-}
+
 .flex {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 40%;
-  margin-left: 10%;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .img3 {
   display: flex;
   justify-content: center;
-  padding: 11px;
-  margin-left: 20px;
+  padding: 19px;
   margin-top: 20px;
-
-  height: 400px;
-  width: 400px;
+  object-fit: cover;
+  height: 450px;
+  width: 450px;
 }
 .textbox3 {
   display: flex;
-  flex-direction: column;
-
-  width: 400px;
-  position: absolute;
-  top: 470%;
-  left: 34%;
+  flex-direction: row;
+  width: 950px;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 .art1 {
-  padding-left: 1px;
+  padding-left: 10px;
   padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 1px;
+  padding-bottom: 5px;
+  padding-right: 10px;
   border: none;
   background: none;
   color: #2c3e50;
@@ -175,13 +184,12 @@ h3 {
   border: 2px solid pink;
   border-radius: 50px 20px;
   margin-top: 40%;
-  width: 150px;
 }
 .art2 {
-  padding-left: 1px;
+  padding-left: 10px;
   padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 1px;
+  padding-bottom: 5px;
+  padding-right: 10px;
   border: none;
   background: none;
   color: #2c3e50;
@@ -189,9 +197,7 @@ h3 {
   cursor: pointer;
   border: 2px solid pink;
   border-radius: 50px 20px;
-  margin-top: 20%;
-  margin-left: 33%;
-  width: 400px;
+  margin-top: 40%;
 }
 .art3 {
   padding-left: 1px;
@@ -206,5 +212,11 @@ h3 {
   border: 2px solid pink;
   border-radius: 50px 20px;
   margin-top: 80%;
+}
+.bigcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
 }
 </style>

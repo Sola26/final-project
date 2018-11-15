@@ -42,7 +42,6 @@ h3 {
   position: absolute;
   top: 40%;
   left: 33%;
-  /* border: 2px solid pink; */
 }
 .message {
   padding-left: 12px;
@@ -56,8 +55,11 @@ h3 {
   cursor: pointer;
   border: 2px solid pink;
   border-radius: 50px 20px;
+  position: absolute;
+  top: 100%;
+  left: 40%;
 }
-.message:active {
+.message:hover {
   color: rgba(255, 197, 110, 0.93);
 }
 </style>

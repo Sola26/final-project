@@ -24,6 +24,11 @@
                   >Contact</router-link
                 >
               </span>
+              <span>
+                <router-link :to="{ name: 'Journal' }" class="li"
+                  >Journal</router-link
+                >
+              </span>
             </div>
           </div></a
         >
@@ -64,7 +69,7 @@ img {
   font-size: 17px;
   position: absolute;
   top: 10%;
-  left: 75%;
+  left: 67%;
 }
 .li {
   color: #2c3e50;
@@ -80,7 +85,7 @@ img {
   color: #2c3e50;
   font-size: 12px;
   cursor: pointer;
-  border: 2px solid pink;
+
   border-radius: 50px 20px;
 }
 </style>

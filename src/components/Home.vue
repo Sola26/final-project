@@ -18,13 +18,12 @@ export default {
     document.addEventListener("DOMContentLoaded", function(event) {
       // array with texts to type in typewriter
       var dataText = [
-        "Hi =",
+        "OBj =",
         "{ name: 'Sola', type: 'Human!', 'front-end developer', 'graphic designer'",
         "location: 'Berlin'",
         "properties: 'Javascript', 'HTML',",
         "'CSS'",
-
-        " .... obviously! }"
+        " ... obviously! }"
       ];
 
       // type one text in the typwriter
@@ -79,7 +78,7 @@ body {
 
 h1 {
   font-size: 25px;
-  margin-top: 30%;
+  margin-top: 25%;
 
   font-family: "Courier";
 }

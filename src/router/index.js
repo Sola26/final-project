@@ -4,6 +4,7 @@ import Home from "@/components/Home";
 import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
+import Journal from "@/components/Journal";
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: "/contact",
       name: "Contact",
       component: Contact
+    },
+    {
+      path: "/journal",
+      name: "Journal",
+      component: Journal
     }
   ]
 });
