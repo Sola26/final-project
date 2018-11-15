@@ -5,17 +5,19 @@
       <h2>What I've been up to.</h2>
       <h3>Here's a selection of some recent work.</h3>
     </div>
-    <div class="textbox1">
-      <h2 class="art">App's title</h2>
-      <p>
-        app Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam.
-      </p>
+    <div class="container1">
+      <h2 class="art1">App's title</h2>
+      <div class="textbox1">
+        <p>
+          app Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+      </div>
+      <img class="img1" src="/static/app.png" />
     </div>
-    <img class="img1" src="/static/app.png" />
+    <h2 class="art2">Berlin's title</h2>
     <div class="textbox2">
-      <h2 class="art">Berlin's title</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -27,7 +29,7 @@
       <source src="/static/Das ist Berlin+.mp4" type="video/mp4" />
     </video>
     <div class="textbox3">
-      <h2 class="art">Hood magazine</h2>
+      <h2 class="art3">Hood magazine</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -93,15 +95,21 @@ h3 {
   top: 20%;
   left: 30%;
 }
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .textbox1 {
   display: flex;
   flex-direction: column;
 
   width: 400px;
-  position: absolute;
-  top: 140%;
-  left: 34%;
+  /* position: absolute;
+  top: 200%;
+  left: 34%; */
 }
 
 .textbox2 {
@@ -109,14 +117,12 @@ h3 {
   flex-direction: column;
 
   width: 400px;
-  position: absolute;
-  top: 235%;
-  left: 34%;
+  margin-top: 60%;
 }
 .img1 {
   height: 600px;
   width: 900px;
-  margin-top: 29%;
+  /* margin-top: 1%; */
   object-fit: cover;
 }
 .responsive-video {
@@ -156,11 +162,11 @@ h3 {
   top: 470%;
   left: 34%;
 }
-.art {
-  padding-left: 7px;
+.art1 {
+  padding-left: 1px;
   padding-top: 1px;
   padding-bottom: 1px;
-  padding-right: 7px;
+  padding-right: 1px;
   border: none;
   background: none;
   color: #2c3e50;
@@ -168,5 +174,37 @@ h3 {
   cursor: pointer;
   border: 2px solid pink;
   border-radius: 50px 20px;
+  margin-top: 40%;
+  width: 150px;
+}
+.art2 {
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  border: none;
+  background: none;
+  color: #2c3e50;
+  font-size: 30px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 50px 20px;
+  margin-top: 20%;
+  margin-left: 33%;
+  width: 400px;
+}
+.art3 {
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  border: none;
+  background: none;
+  color: #2c3e50;
+  font-size: 30px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 50px 20px;
+  margin-top: 80%;
 }
 </style>
