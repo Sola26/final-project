@@ -26,14 +26,14 @@ export default new Router({
       component: Work
     },
     {
-      path: "/contact",
-      name: "Contact",
-      component: Contact
-    },
-    {
       path: "/journal",
       name: "Journal",
       component: Journal
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+      component: Contact
     }
   ]
 });

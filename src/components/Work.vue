@@ -1,57 +1,51 @@
 <template>
   <div class="background">
-    <p class="work">Work</p>
-    <div class="title">
-      <h2>What I've been up to.</h2>
-      <h3>Here's a selection of some recent work.</h3>
+    <div>
+      <p class="work">Work</p>
+      <div class="title">
+        <h2>What I've been up to.</h2>
+        <h3>Here's a selection of some recent work.</h3>
+      </div>
     </div>
-    <div class="bigcontainer">
-      <div class="container1">
-        <h2 class="art1">Neartastic</h2>
-        <div class="textbox1">
-          <img class="img1" src="/static/app.png" />
-          <p>
-            app Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-        </div>
-      </div>
 
-      <div class="container3">
-        <h2 class="art3">Hood magazine</h2>
+    <div class="container1">
+      <p class="title2">Imageboard</p>
+      <a href="https://github.com/Sola26/imageboard">
+        <img
+          class="githublogo"
+          title="open in github"
+          src="/static/GitHub-Mark-120px-plus.png"
+      /></a>
+      <p class="text">
+        Imageboard is a page to upload, see uploaded pictures and leave
+        comments. Features implemented: Display of all uploaded images | Image
+        upload | Comments | Delete images. Technologies used: Javascript | Vue |
+        Node.js | Express | PostgreSQL | HTML/CSS | AWS .
+      </p>
 
-        <div class="flex">
-          <img class="img3" src="/static/hoodcover.jpg" />
-          <img class="img3" src="/static/hood1.jpg" />
-          <img class="img3" src="/static/hood2.jpg" />
-          <img class="img3" src="/static/hood3.jpg" />
-          <img class="img3" src="/static/hood5.jpg" />
-          <img class="img3" src="/static/hood6.jpg" />
-        </div>
-        <div class="textbox3">
-          <p>
-            HOOD is a magazine geared toward collecting and commemorating all
-            things ordinarily wonderful. The most random discoveries: bazaar
-            drawings, cheeky messages, you name it. Schoeneberg, a street in
-            Tempelhof, is well known for its plethora of art galleries and
-            institutions.
-          </p>
-        </div>
-      </div>
+      <a href="/static/2019-01-11_15-35-16 (1).gif">
+        <img class="img1" src="/static/2019-01-11_15-35-16 (1).gif"
+      /></a>
+    </div>
 
-      <div class="container2">
-        <h2 class="art2">Das is Berlin</h2>
-        <video class="responsive-video" controls>
-          <source src="/static/Das ist Berlin+.mp4" type="video/mp4" />
-        </video>
-        <div class="textbox2">
-          <p>
-            Here is a music video that I love made by Berliner Morgenpost. I
-            added some effects with Adobe After Effect.
-          </p>
-        </div>
-      </div>
+    <div class="container2">
+      <p class="title2">Petition</p>
+      <a href="https://github.com/Sola26/petition">
+        <img
+          class="githublogo"
+          title="open in github"
+          src="/static/GitHub-Mark-120px-plus.png"
+      /></a>
+      <p class="text">
+        Keep stores opened on sundays! A petition page I created using
+        javascript, CSS, handlebars.js, postgreSQL ,node.js, express.js. You can
+        register an account, edit your profile, submit your signature and see
+        everyone else who support the petition by the city they registered.
+      </p>
+
+      <a href="/static/2019-01-12_15-56-57 (1).gif">
+        <img class="img2" src="/static/2019-01-12_15-56-57 (1).gif"
+      /></a>
     </div>
   </div>
 </template>
@@ -59,14 +53,23 @@
 export default {
   name: "Work",
   data() {
-    return {};
+    return {
+      data: [
+        '<div class="example-slide imga"><img src="/static/app.png"/></div>',
+        '<div class="example-slide img3"><video class="responsive-video" controls></div>',
+        '<div class="example-slide">Slide 3</div>'
+      ]
+    };
+  },
+  mounted() {
+    Vue.component(VueCarousel.name, VueCarousel);
   }
 };
 </script>
 <style scoped>
-.background {
-  height: 5400px;
-}
+/* .background {
+  height: 3000px;
+} */
 .p {
   font-size: 1.5em;
 }
@@ -97,126 +100,52 @@ h3 {
 .title {
   display: flex;
   flex-direction: column;
-
   width: 500px;
   position: absolute;
   top: 20%;
   left: 30%;
 }
+.title2 {
+  font-size: 60px;
+  font-weight: bold;
+}
 .container1 {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  padding-top: 13%;
   align-items: center;
 }
 .container2 {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  padding-top: 20%;
   align-items: center;
 }
-.container3 {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  align-items: center;
-}
-
-.textbox1 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-}
-
-.textbox2 {
-  display: flex;
-  flex-direction: column;
-  width: 630px;
-  margin-top: 50px;
-  margin-left: 30px;
-  text-align: left;
+.text {
+  height: 600px;
+  width: 600px;
+  object-fit: cover;
 }
 .img1 {
-  height: 600px;
-  width: 900px;
-  object-fit: cover;
-  align-self: center;
-}
-.responsive-video {
   height: 400px;
-  width: 600px;
-  align-self: center;
-}
-
-.flex {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.img3 {
-  display: flex;
-  justify-content: center;
-  padding: 19px;
-  margin-top: 20px;
+  width: 700px;
   object-fit: cover;
-  height: 450px;
-  width: 450px;
+  position: absolute;
+  top: 180%;
+  left: 24%;
 }
-.textbox3 {
-  display: flex;
-  flex-direction: row;
-  width: 950px;
-  justify-content: flex-start;
-  text-align: left;
-  margin-top: 50px;
-  margin-left: 30px;
+.img2 {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  position: absolute;
+  top: 350%;
+  left: 24%;
 }
-.art1 {
-  padding-left: 10px;
-  padding-top: 1px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  border: none;
-  background: none;
-  color: #2c3e50;
-  font-size: 30px;
-  cursor: pointer;
-  border: 2px solid pink;
-  border-radius: 50px 20px;
-  margin-top: 40%;
-}
-.art2 {
-  padding-left: 10px;
-  padding-top: 1px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  border: none;
-  background: none;
-  color: #2c3e50;
-  font-size: 30px;
-  cursor: pointer;
-  border: 2px solid pink;
-  border-radius: 50px 20px;
-  margin-top: 40%;
-}
-.art3 {
-  padding-left: 1px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 1px;
-  border: none;
-  background: none;
-  color: #2c3e50;
-  font-size: 30px;
-  cursor: pointer;
-  border: 2px solid pink;
-  border-radius: 50px 20px;
-  margin-top: 80%;
-}
-.bigcontainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0px;
+.githublogo {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  /* padding-top: 12px; */
 }
 </style>

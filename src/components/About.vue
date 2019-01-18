@@ -1,8 +1,8 @@
 <template>
   <div class="background">
-    <p class="title">What I do.</p>
+    <p class="title">What I do;</p>
     <div class="text1">
-      <div class="art"><h2>Design what you want.</h2></div>
+      <div class="art"><h2>I Design.</h2></div>
       <p>
         I like to keep it simple. My goals are to focus on typography, content
         and conveying the message that you want to send.
@@ -10,7 +10,7 @@
     </div>
 
     <div class="text2">
-      <div class="art"><h2>Develop what you need.</h2></div>
+      <div class="art"><h2>I Develop.</h2></div>
       <p>
         I'm a developer, so I know how to create your website to run across
         devices using the latest technologies available.
@@ -62,7 +62,7 @@ img {
 
   width: 400px;
   position: absolute;
-  top: 65%;
+  top: 90%;
   left: 34%;
 }
 .text2 {
@@ -71,11 +71,12 @@ img {
 
   width: 400px;
   position: absolute;
-  top: 120%;
+  top: 145%;
   left: 34%;
 }
+
 .background {
   background-color: white;
-  height: 1000px;
+  height: 1100px;
 }
 </style>

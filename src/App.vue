@@ -8,11 +8,14 @@
 
 <script>
 import Navbar from "@/components/Navbar";
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,
+    Carousel,
+    Slide
   }
 };
 </script>

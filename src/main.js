@@ -3,6 +3,12 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
+
+// import VueCarousel from "vue-carousel";
+import VueCarousel from "@chenfengyuan/vue-carousel";
+
+Vue.component(VueCarousel.name, VueCarousel);
+Vue.use(VueCarousel);
 // import VueMaterial from "vue-material";
 // import "vue-material/dist/vue-material.css";
 

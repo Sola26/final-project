@@ -19,14 +19,16 @@
                   >Work</router-link
                 >
               </span>
+              <!--
+                <span>
+                  <router-link :to="{ name: 'Journal' }" class="li"
+                    >Journal</router-link
+                  >
+                </span>
+              -->
               <span>
                 <router-link :to="{ name: 'Contact' }" class="li"
                   >Contact</router-link
-                >
-              </span>
-              <span>
-                <router-link :to="{ name: 'Journal' }" class="li"
-                  >Journal</router-link
                 >
               </span>
             </div>

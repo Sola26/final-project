@@ -1,11 +1,5 @@
 <template>
-  <div>
-    <h1>Hi...</h1>
-
-    <!--
-      <img src="http://www.legworkstudio.com/images/loading@2x.gif" alt="" />
-    -->
-  </div>
+  <div><h1>Hi;</h1></div>
 </template>
 
 <script>
@@ -19,7 +13,7 @@ export default {
       // array with texts to type in typewriter
       var dataText = [
         "OBj =",
-        "{ name: 'Sola', type: 'Human!', 'front-end developer', 'graphic designer'",
+        "{ name: 'Sola', type: 'Human!', 'full-stack developer', 'UI UX designer'",
         "location: 'Berlin'",
         "properties: 'Javascript', 'HTML',",
         "'CSS'",
@@ -77,8 +71,8 @@ body {
 }
 
 h1 {
-  font-size: 25px;
-  margin-top: 25%;
+  font-size: 40px;
+  margin-top: 15%;
 
   font-family: "Courier";
 }
