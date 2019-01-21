@@ -67,9 +67,6 @@ export default {
 };
 </script>
 <style scoped>
-/* .background {
-  height: 3000px;
-} */
 .p {
   font-size: 1.5em;
 }
@@ -87,9 +84,6 @@ h2 {
   font-weight: bold;
   margin-top: 11em;
   margin-left: 1em;
-  /* position: absolute;
-  top: 8%;
-  left: 36%; */
 }
 h3 {
   font-size: 19px;
@@ -146,6 +140,5 @@ h3 {
   height: 30px;
   width: 30px;
   object-fit: cover;
-  /* padding-top: 12px; */
 }
 </style>
