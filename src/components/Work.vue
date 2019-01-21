@@ -53,16 +53,7 @@
 export default {
   name: "Work",
   data() {
-    return {
-      data: [
-        '<div class="example-slide imga"><img src="/static/app.png"/></div>',
-        '<div class="example-slide img3"><video class="responsive-video" controls></div>',
-        '<div class="example-slide">Slide 3</div>'
-      ]
-    };
-  },
-  mounted() {
-    Vue.component(VueCarousel.name, VueCarousel);
+    return {};
   }
 };
 </script>

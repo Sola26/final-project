@@ -7,7 +7,7 @@
     </h3>
     <div>
       <a class="message" href="mailto:islahalthawr@gmail.com"
-        >message me <i></i
+        >Message me <i></i
       ></a>
     </div>
 

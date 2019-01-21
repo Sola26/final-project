@@ -68,7 +68,6 @@ img {
 .text2 {
   display: flex;
   flex-direction: column;
-
   width: 400px;
   position: absolute;
   top: 145%;

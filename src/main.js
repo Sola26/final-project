@@ -4,14 +4,6 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 
-import VueCarousel from "@chenfengyuan/vue-carousel";
-
-Vue.component(VueCarousel.name, VueCarousel);
-Vue.use(VueCarousel);
-
-const $ = require("jquery");
-window.$ = $;
-
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

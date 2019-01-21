@@ -20,7 +20,7 @@ export default {
         " ... obviously! }"
       ];
 
-      // type one text in the typwriter
+      // type one text in the "typwriter"
       // keeps calling itself until the text is finished
       function typeWriter(text, i, fnCallback) {
         // chekc if text isn't finished yet
