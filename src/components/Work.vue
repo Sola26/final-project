@@ -2,7 +2,7 @@
   <div class="background">
     <div>
       <p class="work">Work</p>
-      <div class="title">
+      <div class="Title">
         <h2>What I've been up to.</h2>
         <h3>Here's a selection of some recent work.</h3>
       </div>
@@ -82,7 +82,7 @@ h3 {
   margin-left: 1em;
 }
 
-.title {
+.Title {
   display: flex;
   flex-direction: column;
   width: 500px;
